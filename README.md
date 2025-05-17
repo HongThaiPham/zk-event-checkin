@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# zkEventCheckin
 
-## Getting Started
+zkEventCheckin is a Solana-based application that enables event creators to mint compressed tokens (cTokens) for events and distribute them to attendees via QR codes. Leveraging Light Protocol, Solana Pay, and ZK Compression, it ensures scalability, low on-chain state costs, and secure, seamless token distribution while prioritizing privacy and performance.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Event Token Minting**: Creators can mint compressed tokens for their events.
+- **Secure Vaults**: Each event has a dedicated vault to securely hold cTokens.
+- **QR Code Distribution**: Solana Pay QR codes are generated for attendees to scan.
+- **One-Click Token Transfer**: Scanning a QR code transfers 1 cToken from the event vault to the user's wallet.
+- **Scalability & Privacy**: Built with ZK Compression for cost-efficient, private transactions.
+- **Single-Claim Enforcement**: Prevents users from claiming a token more than once.
+- **Composability**: Designed to integrate seamlessly with other Solana-based systems.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Light Protocol**: ZK compression and compressed token management.
+- **Solana Pay**: QR-based wallet interactions for token transfers.
+- **Next.js + TypeScript**: Frontend framework for a responsive UI.
+- **PostgreSQL**: Stores event and user metadata.
